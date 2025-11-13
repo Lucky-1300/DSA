@@ -37,5 +37,32 @@ print(arr)
 
 # Q3. Maximum Subarray
 
+arr = [2, -3, 4, -1, 5]
+
+current_max = 0 
+global_max = arr[0]
+
+for i in range(len(arr)):
+      current_max += arr[i]
+      if current_max > global_max:
+         global_max = current_max
+      if current_max < 0:
+         current_max = 0
+
+print("Maximum Subarray Sum:", global_max)
+
 
 # Q4. Contains Duplicate
+
+arr = [1, 2, 3, 2, 5]
+
+def contains_duplicate(arr):
+    for i in range(len(arr)):
+        for j in range(i + 1, len(arr)):
+            if arr[i] == arr[j]:
+                return True
+    return False  
+
+print(contains_duplicate(arr))
+
+
