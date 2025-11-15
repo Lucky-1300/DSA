@@ -66,3 +66,38 @@ def contains_duplicate(arr):
 print(contains_duplicate(arr))
 
 
+
+# Q5. Print all even numbers in an array
+
+arr = [1,2,3,4,5,6]
+
+even_list = []
+for i in range(len(arr)):
+    if arr[i] % 2 == 0:
+        even_list.append(arr[i])
+
+print(even_list)
+
+
+
+# Q6.Print all odd numbers in an array
+
+arr = [1,2,3,4,5,6,7]
+
+odd_list = []
+
+for i in range(len(arr)):
+    if arr[i] % 2 != 0:
+        odd_list.append(arr[i])
+
+print(odd_list)
+        
+        
+
+
+
+     
+
+
+
+
