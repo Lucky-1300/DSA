@@ -175,8 +175,17 @@ print(arr)
 
 
 
+#11. Find the Second Largest Element in an Array
+arr = [12, 35, 1, 10, 34, 10]
+first = second = float('-inf')
+for number in arr:
+    if number > first:
+        second = first
+        first = number
+    elif number > second and number != first:
+        second = number
 
-
+print("Second Largest Element:", second)
 
 
 
