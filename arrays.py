@@ -292,61 +292,148 @@
 #17. Five easy conditional questions.
 
 #1. Check if a number is positive ,negative, or zero.
-num = int(input("Enter a Number:"))
-if num > 0:
-    print("Number is positive")
-elif num < 0:
-    print("Number is negative")
-else:
-    print("Number is zero")
+# num = int(input("Enter a Number:"))
+# if num > 0:
+#     print("Number is positive")
+# elif num < 0:
+#     print("Number is negative")
+# else:
+#     print("Number is zero")
 
 
 
 #2. Check if a number is even or odd.
-num = int(input("Enter a number:"))
-if num % 2 == 0:
-    print("Even Number")
-else:
-    print("Odd Number")
+# num = int(input("Enter a number:"))
+# if num % 2 == 0:
+#     print("Even Number")
+# else:
+#     print("Odd Number")
 
 
 
 #3. Find the largest of two numbers.
-num1 =  int(input("Enter number1:"))
-num2 = int(input("Enter number2:"))
-if num1 > num2:
-    print(num1, "is greater" )
-else: 
-    print(num2, "is greater")
+# num1 =  int(input("Enter number1:"))
+# num2 = int(input("Enter number2:"))
+# if num1 > num2:
+#     print(num1, "is greater" )
+# else: 
+#     print(num2, "is greater")
 
 
 
 #4.Check if a person is eligible to vote(age >= 18).
-age = int(input("Enter age:"))
-if age >= 18:
-    print("Person is eligible to vote")
-else:
-    print("Person is not eligible to vote")
+# age = int(input("Enter age:"))
+# if age >= 18:
+#     print("Person is eligible to vote")
+# else:
+#     print("Person is not eligible to vote")
 
 
 
 #5. Check if a number is divisible by 5 and 11.
-num = int(input("Enter a number:"))
-if num % 5 == 0 and num % 11 == 0:
-    print("Number is divisible by 5 and 11")
-else:
-    print("Number is not divisible by 5 and 11")
+# num = int(input("Enter a number:"))
+# if num % 5 == 0 and num % 11 == 0:
+#     print("Number is divisible by 5 and 11")
+# else:
+#     print("Number is not divisible by 5 and 11")
 
 
 
 
-#6.Check if a year is a leap year.
-#7.Check if a character is a vowel or consonant.
-#8.Check if a character is an alphabet, digit, or special symbol.
-#9.Find the smallest of three numbers.
-#10.Check if a number is multiple of both 3 and 7.
 
+
+
+# x in arr returns True if x exists in the list arr, otherwise False.
+
+#  Check if an element exists in an array.
+
+# arr = [1,2,3,4]
+# x = 3
+# if x in arr:
+#     print("True")
+# else:
+#     print("False")
+
+
+
+
+
+# Find the first non-repeating character in a string.
+# Go through each letter one by one.
+# Check if it appears only once.
+# If yes → print its place and stop.
+# If no letter is unique → print -1.
+
+# s = "aabb"
+
+# for i in range(len(s)):
+#     if s.count(s[i]) == 1:
+#         print(i)
+#         break
+# else:
+#     print(-1)
 
 
 
     
+
+
+
+#6.Check if a year is a leap year.
+# year = int(input("Enter a year:"))
+# if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+#     print("Leap Year")
+# else:
+#     print("Not a Leap Year")
+
+
+
+
+#7.Check if a character is a vowel or consonant.
+# char = input("Enter a character:")
+# if char in 'aeiouAEIOU':
+#     print("Vowel")
+# else:
+#     print("Consonant")
+
+
+
+
+#8.Check if a character is an alphabet, digit, or special symbol.
+# char = input("Enter a character:")
+# if char.isalpha():
+#     print("Alphabet")
+# elif char.isdigit():
+#     print("Digit")
+# else:
+#     print("Special Symbol")
+
+
+
+
+#9.Find the smallest of three numbers.
+# num1 = int(input("Enter a number:"))
+# num2 = int(input("Enter a number:"))
+# num3 = int(input("Enter a number:"))
+# if num1 > num2 and num1 > num3:
+#     print(num1, "is greatest")
+# elif num2 > num1 and num2 > num3:
+#     print(num2, "is greatest")
+# else:
+#     print(num3, "is greatest")
+
+
+
+
+
+#10.Check if a number is multiple of both 3 and 7.
+num = int(input("Enter a number:"))
+if num % 3 == 0 and num % 7 == 0:
+    print(num,"number is multiple of both 3 and 7")
+else:
+    print(num,"number is not multiple of both 3 and 7")
+
+
+
+
+
