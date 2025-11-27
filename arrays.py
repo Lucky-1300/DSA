@@ -427,13 +427,83 @@
 
 
 #10.Check if a number is multiple of both 3 and 7.
+# num = int(input("Enter a number:"))
+# if num % 3 == 0 and num % 7 == 0:
+#     print(num,"number is multiple of both 3 and 7")
+# else:
+#     print(num,"number is not multiple of both 3 and 7")
+
+
+
+
+
+# "Find the grade of a student based on marks:
+# 90–100 → A, 80–89 → B, 70–79 → C, 60–69 → D, else → F."
+# marks = int(input("Enter the marks:"))
+# if marks >= 90 and marks <= 100:
+#     print("A")
+# elif marks >= 80 and marks <= 89:
+#     print("B")
+# elif marks >= 70 and marks <= 79:
+#     print("C")
+# elif marks >= 60 and marks <= 69:
+#     print("D")
+# else:
+#     print("F")
+
+
+
+
+
+
+# Check whether a character is uppercase, lowercase, or not an alphabet.
+# char = input("Enter a character: ")
+
+# if 'A' <= char <= 'Z':
+#     print("Uppercase Alphabet")
+# elif 'a' <= char <= 'z':
+#     print("Lowercase Alphabet")
+# else:
+#     print("Not an Alphabet")
+
+
+# Determine if a year, month, and day form a valid date.
+
+
+
+# Take an integer input and check if its last digit is 3 or not.
+
+# num = int(input("Enter a number:"))
+# if num == 3:
+#     print("last digit is 3")
+# elif num % 10 == 3:
+#     print("last digit is 3")
+# else:
+#     print("last digit is  not 3")
+
+
+
+
+
+
+# Check if a number is within a range (e.g., 10 ≤ num ≤ 50).
+
 num = int(input("Enter a number:"))
-if num % 3 == 0 and num % 7 == 0:
-    print(num,"number is multiple of both 3 and 7")
+if num >= 10 and num <= 50:
+    print("number is within a range of 10 to 50")
 else:
-    print(num,"number is not multiple of both 3 and 7")
+    print("number is not in range")
+
+
+# Check if a given time (hours, minutes) is valid or not.
+
+
+# Accept a temperature and print if it’s “Cold”, “Warm”, or “Hot” based on ranges.
+
+
+# Check if three angles form a valid triangle.
 
 
 
-
+# Check if the sum of any two numbers equals the third (like 2 + 3 = 5).
 
