@@ -193,5 +193,155 @@ else:
 
 
 
+# "Grade Assignment With Edge Cases
+# Write a program that assigns grades based on marks:
+# 90–100 → A
+# 80–89 → B
+# 70–79 → C
+# 60–69 → D
 
+
+
+
+# Below 60 → F
+# But if marks are exactly 100, print ""Perfect Score!""."
+# "2️⃣ Leap Year + Century Check
+
+
+
+
+# Given a year:
+
+# If it's a leap year, print ""Leap Year"".
+
+# If it's divisible by 100 but not 400, print ""Century but not a leap year"".
+# Otherwise, print ""Normal Year""."
+
+
+
+# "3️⃣ Complex Password Validator
+
+# Check password validity:
+
+# Length ≥ 8
+
+# At least 1 uppercase
+
+# At least 1 lowercase
+
+# At least 1 digit
+
+# At least 1 special symbol
+# If any condition fails, print exactly which rule failed."
+
+
+
+# "4️⃣ ATM Withdrawal Logic
+
+# Given balance, withdrawal amount, and account type:
+
+# If withdrawal <= balance:
+
+# If account type is ""premium"", allow overdraft up to ₹5000.
+
+# If account type is ""normal"", no overdraft allowed.
+
+# Otherwise, print ""Insufficient Balance""."
+
+
+
+# "5️⃣ Movie Ticket Pricing
+
+# Input: age, day of week, and time (matinee or night).
+
+# Children (<13) and seniors (>60) get 50% off.
+
+# Weekend shows cost +₹100 extra.
+
+# Matinee shows cost 30% less.
+# Calculate the final ticket price."
+
+
+
+
+
+
+# "6️⃣ Triangle Type Validator
+
+# Given 3 sides:
+
+# Check if they form a triangle.
+
+# If yes:
+
+# If all sides equal → Equilateral
+
+# If two sides equal → Isosceles
+
+# If all sides different → Scalene
+
+# If they don’t form a valid triangle, print ""Invalid Triangle""."
+
+
+
+
+
+# "7️⃣ Electricity Bill Calculation
+
+# Based on units:
+
+# 0–100 → ₹5/unit
+
+# 101–200 → ₹7/unit
+
+# 200+ → ₹10/unit
+# If the bill exceeds ₹2000, add 5% surcharge."
+
+
+
+
+
+
+
+# "8️⃣ Login System With Lock
+
+# Given username, password, and number of failed attempts:
+
+# If correct → ""Login Successful""
+
+# If wrong but attempts < 3 → ""Try Again""
+
+# If attempts = 3 → ""Account Locked"""
+
+
+
+
+# "9️⃣ Weather Advisory
+
+# Given temperature and humidity:
+
+# Temp > 40 and humidity < 40 → ""Heat Wave Alert""
+
+# Temp < 10 and humidity > 60 → ""Cold & Humid — Wear Layers""
+
+# Temp between 20–30 → ""Comfortable Weather""
+
+# Else → ""Normal Day"""
+
+
+
+
+
+
+# "🔟 Advanced Number Check
+
+# Given a number n:
+
+# If n is divisible by both 3 & 5 → ""FizzBuzz""
+
+# If n is prime → ""Prime Number""
+
+# If n is even and > 100 → ""Large Even Number""
+
+# Else → ""Just a Number"""
  
