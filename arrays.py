@@ -328,12 +328,13 @@
 
 #Bubble Sort
 # arr = [5,2,9,1,5,6]
-# n = len(arr)
+# n = len(arr)g
 # for i in range(len(arr)):
 #     for j in range(n - i - 1):
 #         if arr[j] > arr[j+1]:
 #             arr[j],arr[j+1] = arr[j+1],arr[j]
 # print(arr)
+
 
 
 
@@ -363,3 +364,101 @@
 
      
 
+
+
+# Find the smallest element in an array. Input: [4, 2, 9, 1, 7]
+# Output: 1
+
+
+
+# arr = [4, 2, 9, 1, 7]
+# smallest = min(arr)
+# print(smallest)
+
+
+
+# Check if two strings are anagrams (same letters, different order).Input: "listen", "silent"
+# Output: True
+
+# s1 = "listen"
+# s2 = "silent"
+
+# def are_anagrams(a, b):
+#     return sorted(a) == sorted(b)
+
+# print(are_anagrams(s1, s2))
+
+
+
+
+# Move all zeros to the end of the array while keeping order.Input: [0, 1, 0, 3, 12]
+# Output: [1, 3, 12, 0, 0]
+
+# arr = [0, 1, 0, 3, 12]
+
+# new_arr = []
+# zeros = []
+
+# for num in arr:
+#     if num == 0:
+#         zeros.append(0)
+#     else:
+#         new_arr.append(num)
+
+# result = new_arr + zeros
+
+# print(result)
+
+
+# Find the second smallest number
+arr = [12, 5, 7, 3, 9]
+arr.sort()
+print("Second smallest =", arr[1])
+
+
+# Use Linear Search to find the number 7 in the array:
+# [2, 4, 7, 1, 9]
+# At which index is it found?
+arr = [2,4,7,1,9]
+target = 7
+for i in range(len(arr)):
+    if arr[i] == target:
+        print(i)
+
+
+
+# Use Selection Sort to sort the array:
+# [29, 10, 14, 37, 13]
+arr = [29, 10, 14, 37, 13]
+for i in range(len(arr)):
+    min_idx = i
+    for j in range(i+1, len(arr)):
+        if arr[j] < arr[min_idx]:
+            min_idx = j
+    arr[i], arr[min_idx] = arr[min_idx], arr[i]
+
+print("Sorted array:", arr)
+
+
+
+
+
+def binary_search(arr, target):
+    low = 0
+    high = len(arr) - 1
+
+    while low <= high:
+        mid = (low + high ) // 2
+
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return -1
+
+arr = [2,4,6,8,10,12,14,16]
+target = 10
+index = binary_search(arr,target)
+print(index)
