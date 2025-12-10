@@ -5,13 +5,13 @@
 # Output: 2
 
 
-str = "hello"
-vowels = "aeiou"
-count = 0
-for char in str:
-    if char in vowels:
-        count += 1
-print(count)
+# str = "hello"
+# vowels = "aeiou"
+# count = 0
+# for char in str:
+#     if char in vowels:
+#         count += 1
+# print(count)
 
 
 
@@ -52,16 +52,42 @@ print(count)
 
 
 
-def is_palindrome(s):
-    left = 0
-    right = len(s) - 1
-    while left < right:
-        if s[left] != s[right]:
-            return False
-        left += 1
-        right -= 1
-    return True
+# def is_palindrome(s):
+#     left = 0
+#     right = len(s) - 1
+#     while left < right:
+#         if s[left] != s[right]:
+#             return False
+#         left += 1
+#         right -= 1
+#     return True
 
 
-print(is_palindrome("racecar")) 
-print(is_palindrome("hello"))    
+# print(is_palindrome("racecar")) 
+# print(is_palindrome("hello"))    
+
+
+# binary search
+# def binary_search(arr, target):
+#     left, right = 0, len(arr) - 1
+#     while left <= right:
+#         mid = (left + right) // 2
+#         if arr[mid] == target:
+#             return mid
+#         elif arr[mid] < target:
+#             left = mid + 1
+#         else:
+#             right = mid - 1
+#     return -1
+
+
+
+
+children = int(input("Enter number of children: "))
+
+if children >= 10:
+    print(1000)
+else:
+    print(children * 200)
+
+
