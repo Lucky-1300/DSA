@@ -83,11 +83,84 @@
 
 
 
-children = int(input("Enter number of children: "))
+# children = int(input("Enter number of children: "))
 
-if children >= 10:
-    print(1000)
-else:
-    print(children * 200)
+# if children >= 10:
+#     print(1000)
+# else:
+#     print(children * 200)
+
+
+# strs = ["eat", "tea", "tan", "ate", "nat", "bat"]
+
+# groups = {}
+
+# for word in strs:
+#     key = ''.join(sorted(word))
+#     if key not in groups:
+#       groups[key] = []
+#     groups[key].append(word)
+# print(groups)
+
+# word = "eat"
+# key = ''.join(sorted(word))
+# print(key)
+# print(type(key))
+
+
+# groups = {
+#     "aet": ["eat", "tea"]
+# }
+
+# key = "aet"
+
+# print(key)
+# print(groups[key])
+
+
+# a = 4
+# if a%2 == 0:
+#     print("even")
+# else:
+#     print("odd")
+
+
+# n = 5
+# if a%2 == 0:
+#     print("even") 
+# else:
+#     print("odd")
+
+
+# array = [1, 2, 3, 4, 5]
+
+# even_count = 0
+# old_count = 0
+
+# for i in range(len(array)):
+#     if i % 2 == 0:
+#         even_count += 1
+#     else:
+#         old_count += 1
+# print(even_count)
+# print(old_count)
+
+
+# word = "LuUaIcky"
+
+# vowels = 0
+# consonants = 0
+# for char in word:
+#     if char in "aieouAIEOU":
+#         vowels += 1
+#     else:
+#         consonants += 1
+
+# print("vowels", vowels)
+# print("consonants", consonants)
+
+
+
+
 
 

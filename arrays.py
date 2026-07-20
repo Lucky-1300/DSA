@@ -411,54 +411,91 @@
 
 
 # Find the second smallest number
-arr = [12, 5, 7, 3, 9]
-arr.sort()
-print("Second smallest =", arr[1])
+# arr = [12, 5, 7, 3, 9]
+# arr.sort()
+# print("Second smallest =", arr[1])
 
 
 # Use Linear Search to find the number 7 in the array:
 # [2, 4, 7, 1, 9]
 # At which index is it found?
-arr = [2,4,7,1,9]
-target = 7
-for i in range(len(arr)):
-    if arr[i] == target:
-        print(i)
+# arr = [2,4,7,1,9]
+# target = 7
+# for i in range(len(arr)):
+#     if arr[i] == target:
+#         print(i)
 
 
 
 # Use Selection Sort to sort the array:
 # [29, 10, 14, 37, 13]
-arr = [29, 10, 14, 37, 13]
-for i in range(len(arr)):
-    min_idx = i
-    for j in range(i+1, len(arr)):
-        if arr[j] < arr[min_idx]:
-            min_idx = j
-    arr[i], arr[min_idx] = arr[min_idx], arr[i]
+# arr = [29, 10, 14, 37, 13]
+# for i in range(len(arr)):
+#     min_idx = i
+#     for j in range(i+1, len(arr)):
+#         if arr[j] < arr[min_idx]:
+#             min_idx = j
+#     arr[i], arr[min_idx] = arr[min_idx], arr[i]
 
-print("Sorted array:", arr)
-
-
+# print("Sorted array:", arr)
 
 
 
-def binary_search(arr, target):
-    low = 0
-    high = len(arr) - 1
 
-    while low <= high:
-        mid = (low + high ) // 2
 
-        if arr[mid] == target:
-            return mid
-        elif arr[mid] < target:
-            low = mid + 1
-        else:
-            high = mid - 1
-    return -1
+# def binary_search(arr, target):
+#     low = 0
+#     high = len(arr) - 1
 
-arr = [2,4,6,8,10,12,14,16]
-target = 10
-index = binary_search(arr,target)
-print(index)
+#     while low <= high:
+#         mid = (low + high ) // 2
+
+#         if arr[mid] == target:
+#             return mid
+#         elif arr[mid] < target:
+#             low = mid + 1
+#         else:
+#             high = mid - 1
+#     return -1
+
+# arr = [2,4,6,8,10,12,14,16]
+# target = 10
+# index = binary_search(arr,target)
+# print(index)
+
+
+# Question: Sum of Array Elements
+# arr = [1,2,3,4,5]
+# total = 0
+# for i in range(len(arr)):
+#     total = total + arr[i]
+# print(total)
+
+
+
+# arr = [4, 7, 1, 9, 2]
+
+# max = arr[0]
+
+# for i in range(len(arr)):
+#     if arr[i] > max:
+#         max = arr[i]
+
+# print(max)
+
+
+# numbers = [2, 7, 11, 15]
+# target = 9
+
+# for i in range(len(numbers)):
+#    for j in range(i+1,len(numbers)):
+#       print(i,j)
+    
+
+# numbers = [2, 7, 11, 15]
+# target = 9
+
+# for i in range(len(numbers)):
+#     for j in range(i + 1, len(numbers)):
+#         if numbers[i] + numbers[j] == target:
+#             print([i + 1, j + 1]) 
