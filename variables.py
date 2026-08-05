@@ -336,51 +336,102 @@
 # print(max)
 
 
-players = [22,40,55,90,72,22,35]
-max_num = players[0]
-max2_num = players[1]
+# players = [22,40,55,90,72,22,35]
+# max_num = players[0]
+# max2_num = players[1]
 
 
-for i in range(len(players)):
+# for i in range(len(players)):
     
-    if players[i] > max_num:
-              max2_num = max_num
-              max_num = players[i]
+#     if players[i] > max_num:
+#               max2_num = max_num
+#               max_num = players[i]
 
-for i in range(len(players)):
-      if players[i] > max2_num and players[i] != max_num:
-            max2_num = players[i]
+# for i in range(len(players)):
+#       if players[i] > max2_num and players[i] != max_num:
+#             max2_num = players[i]
 
 
-new_players = [0] * len(players)
-count = 0
-qp = 0
+# new_players = [0] * len(players)
+# count = 0
+# qp = 0
 
-for i in range(len(players)):
-        if players[i] >= 40:
-             new_players[qp] = players[i]
-             qp += 1
-             count += 1
+# for i in range(len(players)):
+#         if players[i] >= 40:
+#              new_players[qp] = players[i]
+#              qp += 1
+#              count += 1
 
-star_players = [0] * len(players)
-sp = 0
+# star_players = [0] * len(players)
+# sp = 0
 
-for i in range(len(players)):
-        if players[i] >= (80 / 100) * max_num:
-          star_players[sp] = players[i]
-          sp += 1
+# for i in range(len(players)):
+#         if players[i] >= (80 / 100) * max_num:
+#           star_players[sp] = players[i]
+#           sp += 1
   
         
         
 
-print("Total qualified players:", count)
-print("Qualified players:", new_players[:qp])
-print("Maximum highest score is ", max_num)
-print("second maximum highest score is", max2_num)
-print("star players", star_players[:sp])
+# print("Total qualified players:", count)
+# print("Qualified players:", new_players[:qp])
+# print("Maximum highest score is ", max_num)
+# print("second maximum highest score is", max2_num)
+# print("star players", star_players[:sp])
 
 
 
+
+# 1. Find the Largest Element in an Array ⭐ (Classic Beginner)
+
+# Problem:
+# Given an array of integers, find the largest element.
+
+# Input
+# arr = [12, 45, 7, 89, 23]
+# Output
+# 89
+# Example 2
+
+# Input
+
+# arr = [-5, -2, -10, -1]
+
+# Output
+
+# -1
+# Constraints
+# 1 <= n <= 10^5
+# -10^9 <= arr[i] <= 10^9
+# Approach
+# Assume the first element is the largest.
+# Traverse the array.
+# If the current element is greater than the largest, update it.
+# Print the largest element.
+# Time Complexity
+# O(n)
+# Space Complexity
+# O(1)
+# Other Classic Array Problems (Solve in this order)
+
+
+# arr = [12, 45, 7, 89, 23]
+# largest = arr[0]
+
+# for i in range(len(arr)):
+#   if largest < arr[i]:
+#     largest = arr[i]
+
+
+# print(largest)
+
+
+arr = [-5, -2, -10, -1]
+max = arr[0]
+for i in range(len(arr)):
+    if max < arr[i]:
+        max = arr[i]
+print(max)
 
 
 
