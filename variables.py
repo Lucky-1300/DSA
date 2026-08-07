@@ -426,19 +426,156 @@
 # print(largest)
 
 
-arr = [-5, -2, -10, -1]
-max = arr[0]
-for i in range(len(arr)):
-    if max < arr[i]:
-        max = arr[i]
-print(max)
+# arr = [-5, -2, -10, -1]
+# max = arr[0]
+# for i in range(len(arr)):
+#     if max < arr[i]:
+#         max = arr[i]
+# print(max)
+
+
+# Problem 1: Decode the Message
+# Each number represents an ASCII code.
+# Convert all numbers into characters and print the hidden message.
+# Input: 72 69 76 76 79
+# Output: HELLO
+
+# input_numbers = [72, 69, 76, 76, 79]
+# hidden_message =  ''.join(chr(n) for n in input_numbers)
+# print(hidden_message)
+
+# Problem 2: Hide the Vowels
+# Replace every vowel (A, E, I, O, U) with .
+# Input: HELLO
+# Output: HLL*
+
+# input_str = "HELLO"
+# output_str = ""
+
+# for char in input_str:
+#     if char in "AEIOU":
+#         output_str += "*"
+#     else:
+#         output_str += char
+
+# print(output_str)
+
+# Problem 3: Longest Word
+# Words are separated by a space character (ASCII 32).
+# Find the longest word in the decoded message.
+# Input: HELLO WORLD CHATGPT
+# Output: CHATGPT
+
+# input_str = "HELLO WORLD CHATGPT"
+# words = input_str.split() 
+
+# longest_word = ""
+# for word in words:
+#     if len(word) > len(longest_word):
+#         longest_word = word
+
+# print(longest_word)
+
+# Problem 4: Frequency Analysis
+# Find the most frequently occurring alphabet in the decoded message.
+# Ignore spaces.
+# If two letters have the same frequency, print the alphabet that appears first.
 
 
 
 
+# Problem 1: Find the First Empty Parking Slot
+# A parking lot has N parking slots.
+# Each slot contains:
+# 0 → Empty
+# 1 → Occupied
+# Find the index of the first empty parking slot.
+# If all slots are occupied, print "Parking Full".
+# Input: 1 1 1 0 1 0
+# Output: 3
+
+# arr = [1, 1, 1, 0, 1, 0]
+
+# empty_arr = 0
+# for i in range(len(arr)):
+#     if arr[i] == 0:
+#         empty_arr = i
+#         print(i)
+#         break
+    
+# else:
+#     print("parking full")
 
 
-  
+    
+# Problem 2: Largest Continuous Empty Area
+# Find the longest continuous sequence of empty parking slots.
+# Input: 1 0 0 0 1 0 0
+# Output: Length = 3
+
+# arr = [1,0,0,0,1,0,0]
+# current_zero = 0
+# longest_zero = 0
+
+# for i in range(0,len(arr)):
+#     if arr[i] == 1:
+#         current_zero = 0
+#     elif arr[i] == 0:
+#         current_zero = current_zero + 1
+
+#         if current_zero > longest_zero:
+#             longest_zero = current_zero
+
+# print("longest zero :" ,longest_zero)
+       
+
+# Problem 3: Bus Parking
+# A bus requires K consecutive empty slots.
+# Determine whether the bus can be parked.
+# Input: Slots:1 0 0 0 1 0 0
+#            K = 3
+# Output: YES
+
+# arr = [1,0,0,0,1,0,0]
+# current_zero = 0
+# longest_zero = 0
+# K = 3
+
+# for i in range(0,len(arr)):
+#     if arr[i] == 1:
+#         current_zero = 0
+#     elif arr[i] == 0:
+#         current_zero = current_zero + 1
+
+#         if current_zero > longest_zero and current_zero == K:
+#             longest_zero = current_zero
+            
+# print("yes")
+
+
+# Problem 4: Best Parking Location
+# If there are multiple locations where the bus can park, choose the parking block that lies in the middle among all the valid parking locations.
+# If the number of valid parking locations is odd, choose the exact middle one.
+# If the number of valid parking locations is even, choose the left-middle parking location.
+# Print the starting index of the selected parking block.
+# Input: Parking Slots: 0 0 0 1 0 0 0 1 0 0 0
+# Output: 4 
+
+# arr = [0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0]
+# parking_location = 0
+# even = 0
+# odd = 0
+# for i in range(len(arr)):
+#     if arr[i] == 0:
+#         parking_location = parking_location + 1
+#         parking_location % 2 != 0
+        
+# print(parking_location)
+
+
+        
+
+
 
         
         
