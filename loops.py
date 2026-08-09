@@ -215,13 +215,48 @@
 
 
 
+# 1. Find the Second Largest Element
 
-     
-    
-  
+# Given an array of integers, find the second largest distinct element without sorting the array.
+
+# Example:
+
+# Input:  [10, 5, 8, 10, 3]
+# Output: 8
+
+# Constraint: Try to solve it in O(n) time.
+
+# arr = [10, 5, 20, 8, 15]
+
+# largest = float('-inf')
+# second = float('-inf')
+
+# for i in range(len(arr)):
+#     if arr[i] > largest:
+#         second = largest
+#         largest = arr[i]
+#     elif arr[i] > second and arr[i] != largest:
+#         second = arr[i]
+
+# print("Second maximum:", second)
 
 
+# 2. Count Frequency of Each Element
+
+# Given an array, count how many times each element appears.
+
+# Example:
+
+# Input:  [2, 3, 2, 4, 3, 2, 5]
+
+# Output:
+# 2 → 3
+# 3 → 2
+# 4 → 1
+# 5 → 1
         
+# arr =  [2, 3, 2, 4, 3, 2, 5]
+# count = 0
 
 
 

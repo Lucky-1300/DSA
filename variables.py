@@ -574,10 +574,26 @@
 
 
         
+# remove all the duplicate without using inbuilt function
 
+# output = 3 4 6 2 8 1
 
+# arr = [3, 4, 6, 2, 8, 4, 3, 4, 3, 2, 1]   
+# new_arr = []
 
-        
+# for i in range(len(arr)):
+#     if arr[i] not in new_arr:
+#         new_arr.append(arr[i])
+
+# print(new_arr)  
+
+# arr = [1 ,1, 2, 2, 3 ,3 ,4, 5 ,5]
+# new_arr = []
+# for i in range(len(arr)):
+#     if arr[i] not in new_arr:
+#         new_arr.append(arr[i])
+    
+    
         
     
     
