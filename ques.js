@@ -78,3 +78,11 @@
 // console.log(b)
 
 
+// # A security system receives a number from the user.
+// # If the number is greater than 100, print HIGH.
+// # If the number is less than 100, print LOW.
+// # If the number is exactly 100, print SAFE.
+// # Input: 125
+// # Output: HIGH
+
+

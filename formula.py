@@ -105,16 +105,16 @@
 # Index: 3
 
 
-arr = [18, 5, 27, 3, 14, 9]
+# arr = [18, 5, 27, 3, 14, 9]
 
-9. Find the difference between maximum and minimum
+# 9. Find the difference between maximum and minimum
 
-arr = [10, 4, 25, 8, 17, 2]
+# arr = [10, 4, 25, 8, 17, 2]
 
-Expected:
+# Expected:
 
-Difference: 23
+# Difference: 23
 
-Because:
+# Because:
 
-25 - 2 = 23
+# 25 - 2 = 23
