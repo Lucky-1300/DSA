@@ -6,14 +6,14 @@
 // # Output: HIGH
 
 
-let num = 100
-if(num > 100){
-    console.log("High")
-}else if(num < 100) {
-    console.log("Low")
-}else{
-    console.log("Safe")
-}
+// let num = 100
+// if(num > 100){
+//     console.log("High")
+// }else if(num < 100) {
+//     console.log("Low")
+// }else{
+//     console.log("Safe")
+// }
 
 // # Problem 2: Character Detector
 // # A system receives a single character.
@@ -25,17 +25,17 @@ if(num > 100){
 // # Input: G
 // # Output: UPPERCASE
 
-let str = "G";
-if(str >= "A" && str <= "Z"){
-    console.log("UPPERCASE");
- }
-else if(str >= "a" && str <= "z"){
-    console.log("lowercase");
-}else if(str >= 1 && str <= 9){
-    console.log("digit")
-}else{
-    console.log("special character")
-}
+// let str = "G";
+// if(str >= "A" && str <= "Z"){
+//     console.log("UPPERCASE");
+//  }
+// else if(str >= "a" && str <= "z"){
+//     console.log("lowercase");
+// }else if(str >= 1 && str <= 9){
+//     console.log("digit")
+// }else{
+//     console.log("special character")
+// }
 
 
 
@@ -52,12 +52,16 @@ else if(str >= "a" && str <= "z"){
 // # Output: Strong 
 
 
-let length = 11;
-if (length < 6){
-    console.log("Weak")
-}else if(length > 6 && length < 9){
-    console.log("Medium")
-}else if(length >= 10){
- console.log("Strong")
-}
+// let length = 11;
+// if (length < 6){
+//     console.log("Weak")
+// }else if(length > 6 && length < 9){
+//     console.log("Medium")
+// }else if(length >= 10){
+//  console.log("Strong")
+// }
   
+
+// let a  = +"5"
+// console.log(typeof(a))
+// console.log([] == {})
