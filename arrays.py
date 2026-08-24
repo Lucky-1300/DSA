@@ -960,7 +960,62 @@
 # print(count)
 
 
+# Q1: Missing Number Detective 🕵️
+# An array contains numbers from 1 to n, but one number is missing. 
+# Find it — without sorting the array.
 
+# INPUT: [1, 2, 4, 5, 6, 7, 8] , here (n = 8)
+# OUTPUT: Missing number: 3
+
+# arr = [1, 2, 4, 5, 6, 7, 8]
+# for i in range(len(arr)):
+#     if arr[i] != i + 1:
+#         print(i + 1)
+#         break
+
+
+# Q2: Matrix Diagonal Difference 
+# Given a square matrix, find the absolute difference between the sum of its main diagonal (top-left to bottom-right) and its secondary diagonal (top-right to bottom-left).
+
+# INPUT: 
+# [[11, 2, 4],
+#  [4, 5, 6],
+#  [10, 8, -12]]
+# OUTPUT: Absolute difference: 15
+# (main diagonal: 11+5-12 = 4 | secondary: 4+5+10 = 19 | |4-19| = 15) 
+
+
+
+
+
+# Q3: All Pairs Summing to Target 🎯 
+# Given a list of numbers and a target value, find all pairs of indices (i, j) where the two numbers add up to the target. Each number can only be used once per pair (don't reuse the same index in two different pairs).
+
+# INPUT: arr = [2, 7, 11, 15, 5, 9] , target = 9
+# OUTPUT: [(0, 1)]
+
+# arr = [2, 7, 11, 15, 5, 9]
+# target = 9
+
+# for i in range(len(arr)):
+#     for j in range(i + 1, len(arr)):
+#         if arr[i] + arr[j] == target:
+#             print([(i, j)])
+#             break
+
+
+    
+
+
+# Q4: Matrix Spiral Traversal 🌀
+# Given a square (or rectangular) matrix, print all its elements in spiral order — starting from the top-left, moving right, then down, then left, then up, and spiraling inward.
+
+# INPUT:
+# [[1, 2, 3],
+#  [4, 5, 6],
+#  [7, 8, 9]]
+
+# OUTPUT: [1, 2, 3, 6, 9, 8, 7, 4, 5]
 
         
 
