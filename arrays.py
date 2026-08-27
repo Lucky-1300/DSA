@@ -1018,18 +1018,131 @@
 # OUTPUT: [1, 2, 3, 6, 9, 8, 7, 4, 5]
 
         
+# Today's questions   @3rd Year Students(EU) 
+# Q1: Vowel Counter per Word 🔤
+# Given a sentence, split it into words manually and count the number of vowels in each word.
 
+# INPUT: "the quick brown fox"
+# OUTPUT: [('the', 1), ('quick', 2), ('brown', 1), ('fox', 1)]
+
+# Q2: Truck Overload Checker 🚛
+# A logistics company loads pallets onto trucks. Each truck has a weight limit of 100 kg. Given a 2D list where each row is a truck's pallet weights, find all overloaded trucks and by how much.
+
+# INPUT: [[20, 35, 15], 
+#              [40, 35, 30], 
+#              [45, 40, 30]]
+
+# OUTPUT: Overloaded trucks (truck_no, excess_weight): [(2, 5), (3, 15)]
+
+# Q3: Username Generator 👤
+# A system needs to auto-generate a username from a person's full name, following these rules:
+# Remove all spaces
+# Keep only letters (ignore any numbers or symbols if present)
+# Convert everything to lowercase
+# Keep only the first 8 characters
+
+# INPUT: "Priyanka Chopra Jonas"
+# OUTPUT: priyanka
+
+# Q4: Anagram Group Finder (No Dictionary)
+# Group a list of words into sets of anagrams — words that contain the exact same letters, just rearranged.
+
+# INPUT: ["eat", "tea", "tan", "ate", "nat", "bat"]
+# OUTPUT: [['eat', 'tea', 'ate'], ['tan', 'nat'], ['bat']]
             
 
 
 
+# arr = ["eat", "tea", "tan", "ate", "nat", "bat"]
+
+# Q1:  Insurance Premium Calculator 🏥
+# Calculate insurance premium: base rate depends on age (<25→₹3000, 25-44→₹5000, 45-59→₹8000, 60+→₹12000). 
+# Add 30% if the person has a pre-existing disease, and another 20% if they smoke (both can apply together). 
+
+# INPUT: age=65, has_disease=True, smoker=True 
+# OUTPUT: 18720.0 
+    
+
+# age = int(input("Enter your age:"))
+# has_disease = input("has disease ? (True/Flase):") == "True"
+# smoker = input("Do they smoke ?(True/False):") == "True"
+
+# if age < 25:
+#     price = 3000
+# elif age <= 45:
+#     price = 5000
+# elif age == 60:
+#     price = 8000
+# else:
+#     price = 12000
+# if has_disease:
+#     price = price +(price * 30/100)
+
+# if smoker:
+#     price = price + (price * 20/100)
+
+# print(price)
 
 
     
-    
+# Q2: Move Zeros to End 0️⃣
+# Move all zeros in an array to the end, while keeping the relative order of non-zero elements.
+
+# Input: [0, 1, 0, 3, 12]
+# Output: [1, 3, 12, 0, 0]
+
+# arr =  [0, 1, 0, 3, 12]
+
+# for i in range(len(arr)):
+#     if arr[i] == 0:
+#      for j in range(i+ 1, len(arr)):
+#            if arr[j] !=  0:
+#                arr[i],arr[j] = arr[j],arr[i]
+#                break
+                  
+# print(arr)
 
 
-    
-   
-    
-    
+
+# Q4: String Compression 🗜️
+# Compress a string by counting consecutive repeated characters: "aaabbc" → "a3b2c1". 
+
+# Input: "aaabbc"
+# Output: "a3b2c1"
+
+# s = "aaabbc"
+# count_a = 0
+# count_b = 0
+# count_c = 0
+
+# for ch in range(len(s)):
+#     if s[ch] == "a":
+#         count_a += 1
+#     elif s[ch] == "b":
+#         count_b += 1
+#     elif s[ch] == "c":
+#         count_c += 1
+# print("a" + str(count_a) + "b" + str(count_b) + "c" + str(count_c))
+
+
+
+# s = "aaabbc"
+
+# count = {}
+
+# for i in range(len(s)):
+#     ch = s[i]
+
+#     if ch in count:
+#         count[ch] += 1
+#     else:
+#         count[ch] = 1
+
+# result = ""
+
+# for ch in count:
+#     result += ch + str(count[ch])
+
+# print(result)
+
+
