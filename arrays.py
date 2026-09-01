@@ -1146,3 +1146,153 @@
 # print(result)
 
 
+# matrix = [[1, 0, 0],
+#           [0, 1, 0],
+#           [0, 0, 1]]
+
+# n = len(matrix)
+
+# is_identity = True
+
+# for i in range(n):
+#     for j in range(n):
+
+#         if i == j:
+#             if matrix[i][j] != 1:
+#                 is_identity = False
+#         else:
+#             if matrix[i][j] != 0:
+#                 is_identity = False
+
+# print(is_identity)
+
+
+# Q1: Vowel-Consonant Balancer ⚖️
+# Given a word, print whether it has more vowels, more consonants, or an equal count.
+
+# Input: "programming"
+# Output: More Consonants (3 vowels, 8 consonants)
+
+# s = "programming"
+# count_vowel = 0
+# count_consonants = 0
+
+# max_count = 0
+
+# for ch in s:
+#     if ch in "aioue":
+#         count_vowel += 1
+        
+
+#     elif ch not in "aioue":
+#         count_consonants += 1
+
+# if count_vowel > count_consonants:
+#     reult = "More vowels"
+# else: 
+#     result = "More consonants"
+
+# print(f"{result} ({count_vowel} vowels, {count_consonants} consonants)")
+    
+        # print(count_vowel , "vowels")
+
+# for ch in s:
+#     if ch not in "aioue":
+        # count_consonants += 1
+        # print(count_consonants, "consonants")
+
+
+
+
+
+
+
+
+
+# Q2: Digit Sum Reducer 🔢
+# Given a number, keep adding its digits together until only a single digit remains.
+
+# Input: 9875
+# Output: 2
+# Example:  (9+8+7+5=29 → 2+9=11 → 1+1=2)
+# num = 9875
+
+# while num >= 10:
+#     total = 0
+
+#     while num > 0:
+#         digit = num % 10
+#         total += digit
+#         num = num // 10
+
+#     num = total
+
+# print(num)
+
+
+# Q3: Zigzag Array Checker 〰️
+# Check if an array is "zigzag" - every element is alternately greater than or smaller than its neighbors. 
+
+# Input: [1, 5, 2, 8, 3]
+# Output: True
+# arr = [1, 5, 2, 8, 3]
+
+# found = True
+
+# for i in range(len(arr) - 1):
+
+#     if i % 2 == 0:
+#         if arr[i] >= arr[i+1]:
+#             found = False
+#             break
+
+#     else:
+#         if arr[i] <= arr[i+1]:
+#             found = False
+#             break
+
+# print(found)
+          
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Q4: Tic-Tac-Toe Winner Checker ❌⭕
+# Given a 3x3 board ("X", "O", or ""), determine the winner by checking all rows, columns, and both diagonals. 
+
+# Input: [["X","X","X"],
+#             ["O","O",""],
+#             [" "," "," "]]
+
+
+
+
+                
+# Q1: Sentence Counter ✍️
+# Count how many sentences are in a paragraph by counting [., !, and ?]
+
+# Input: "Hello! How are you? I am fine."
+# Output: 3
+
+# s = "Hello! How are you? I am fine."
+# count = 0
+
+# for ch in s:
+#     if ch in  ".!?":
+#         count += 1
+# print(count)
+
+
+
+
+
