@@ -1253,19 +1253,6 @@
 
 # print(found)
           
-        
-
-
-
-
-
-
-
-
-
-
-
-
 
 # Q4: Tic-Tac-Toe Winner Checker ❌⭕
 # Given a 3x3 board ("X", "O", or ""), determine the winner by checking all rows, columns, and both diagonals. 
@@ -1293,6 +1280,54 @@
 # print(count)
 
 
+# Q3: Sudoku Row Validator 🔢
+# Check if a single Sudoku row is valid — no duplicate numbers (ignore any 0s, which represent empty cells). 
 
+# Input: [5,3,4,6,7,8,9,1,2]
+# Output: True
+
+# arr = [5, 3, 4, 6, 7, 8, 9, 1, 2]
+
+# for i in range(len(arr)):
+#     if arr[i] == 0:
+#         continue
+
+#     for j in range(i + 1, len(arr)):
+#         if arr[i] == arr[j]:
+#             print("False")
+#             break
+#     else:
+#         continue
+#     break
+# else:
+#     print("True")
+
+
+# arr = [5, 3, 4, 6, 7, 8, 9, 1, 2]
+# for i in range(len(arr)):
+#     if arr[i] == 0:
+#         continue
+#     for j in range(i + 1,len(arr)):
+#         if arr[i] == arr[j]:
+#             print("False")
+#             break
+#         else:
+#             continue
+#         break
+# else:
+#     print("True")
+
+
+
+# arr = [1,-2,3,-6,7]
+# count = 0
+# for i in range(len(arr)):
+#     if arr[i] < 0:
+#         count += 1
+# print(count)
+
+# s = "lucky"
+# for ch in range(len(s)-1 ,-1,-1):
+#     print(s[ch])
 
 
