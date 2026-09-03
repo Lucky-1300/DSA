@@ -272,16 +272,71 @@
 ### 8. Sorting Basics
 
 # 40. Sort an array in ascending order without using a built-in sorting function.
+# arr = [5, 2, 8, 1, 3]
+
+# for i in range(len(arr)):
+#     for j in range(i+1,len(arr)):
+#         if arr[i] > arr[j]:
+#             arr[i],arr[j] = arr[j],arr[i]
+# print(arr)
+
 # 41. Sort an array in descending order without using a built-in sorting function.
+# arr = [5, 2, 8, 1, 3]
+
+# for i in range(len(arr)):
+#     for j in range(i+1,len(arr)):
+#         if arr[i] < arr[j]:
+#             arr[i],arr[j] = arr[j],arr[i]
+# print(arr)
 # 42. Find the smallest element after sorting.
+# arr = [5, 2, 8, 1, 3]
+
+
+# for i in range(len(arr)):
+#     for j in range(i+1,len(arr)):
+#         if arr[i] > arr[j]:
+#             arr[i],arr[j] = arr[j],arr[i]
+# # print(arr)
+# min = arr[0]
+# print(min)
+        
+    
+
 # 43. Find the largest element after sorting.
+# arr = [5, 2, 8, 1, 3]
+
+
+# for i in range(len(arr)):
+#     for j in range(i+1,len(arr)):
+#         if arr[i] > arr[j]:
+#             arr[i],arr[j] = arr[j],arr[i]
+# # print(arr)
+# max = arr[-1]
+# print(max)
 # 44. Find the second largest element using sorting.
+# arr = [5, 2, 8, 1, 3]
+
+
+# for i in range(len(arr)):
+#     for j in range(i+1,len(arr)):
+#         if arr[i] > arr[j]:
+#             arr[i],arr[j] = arr[j],arr[i]
+# # print(arr)
+# max = arr[-2]
+# print(max)
 
 ### 9. Simple Array Manipulation
 
 # 45. Insert an element at a given position.
+# arr=[1, 2, 4, 5]
+# position= 2
+# element= 3
+# for i in range(len(arr)):
+#     arr[2] = 3
+# print(arr)
 # 46. Delete an element from a given position.
 # 47. Move all zeros to the end of the array.
 # 48. Move all negative numbers to the beginning of the array.
+
 # 49. Merge two arrays into one array.
 # 50. Find the common elements between two arrays.

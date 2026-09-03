@@ -1331,3 +1331,66 @@
 #     print(s[ch])
 
 
+# Q3: Armstrong Number Checker 🔢
+# Check if a number is an "Armstrong number" — each digit raised to the power of the total digit count, summed up, equals the original number. 
+
+# Input: 153
+# Output: True   (1³ + 5³ + 3³ = 1+125+27 = 153)
+
+
+# num = int(input("Enter a number: "))
+
+# arr = [int(digit) for digit in str(num)]
+# count = len(arr)
+# sum = 0
+# for i in range(len(arr)):
+    
+#     sum += arr[i] ** count
+   
+# if sum == num:
+#     print("True")
+# else:
+#     print("False")
+
+
+    
+# Q4: Segregate Negatives and Positives (Stable) ➖➕
+# Rearrange an array so all negative numbers come first, followed by all positive numbers — keeping their original relative order within each group. 
+
+# Input: [1, -2, 3, -4, 5, -6, 7]
+# Output: [-2, -4, -6, 1, 3, 5, 7]
+
+# arr = [1, -2, 3, -4, 5, -6, 7]
+# negative = []
+# positive = []
+# for i in range(len(arr)):
+#     if arr[i] < 0:
+#         negative.append(arr[i])
+#     else:
+#         positive.append(arr[i])
+# arr = negative + positive
+# print(arr)
+
+
+# Q2: FizzBuzz Range 🎯
+# Print numbers from start to end. Replace multiples of 3 with "Fizz", multiples of 5 with "Buzz", and multiples of both with "FizzBuzz". 
+
+# Input: start=1, end=15
+# Output: ['1','2','Fizz','4','Buzz','Fizz','7','8','Fizz','Buzz','11','Fizz','13','14','FizzBuzz']
+
+
+# start = 1
+# end = 15
+# arr = []
+
+# for i in range(start,end+1):
+#     if i % 3 == 0 and i % 5 ==0:
+#         arr.append("FizzBuzz")
+#     elif i % 3==0:
+#         arr.append("Fizz")
+#     elif i % 5 ==0:
+#         arr.append("Buzz")
+#     else:
+#         arr.append(i)
+
+# print(arr)
