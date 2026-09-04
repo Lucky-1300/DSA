@@ -1394,3 +1394,57 @@
 #         arr.append(i)
 
 # print(arr)
+
+
+# Q1: Count Uppercase Letters 🔠
+# Count how many uppercase letters appear in a sentence. 
+
+# Input: "Hello World From India"
+# Output: 4
+
+# s =  "Hello World From India"
+# count = 0
+# for i in range(len(s)):
+#     if s[i].isupper():
+#         count += 1
+# print(count)
+    
+# Q2: Count Words Starting with a Vowel 🔤
+# Count how many words in a sentence start with a vowel. 
+
+# Input: "Akriti is eating an apple today"
+# Output: 5
+
+# s = "Akriti is eating an apple today"
+# text = s.split()
+
+# count = 0
+# vowels = "AIOUEaioue"
+# for ch in text:
+#     if ch[0] in vowels:
+#         count+=1
+# print(count)
+
+
+# Q4: Diamond Star Pattern 💎: 
+# Print a diamond shape made of stars, given the number of rows for the top half.
+
+# Input: n=4
+# Output: 
+
+# n = 4
+# s = "*"
+# for i in range(1,n+1):
+#     print()
+
+n = "*"
+for i in range(1,8):
+    if i % 2 != 0:
+     print(n * i )
+for i in range(-1):
+    if i % 2 != 0:
+     print(n * i )
+   
+    
+    
+
