@@ -1437,14 +1437,165 @@
 # for i in range(1,n+1):
 #     print()
 
-n = "*"
-for i in range(1,8):
-    if i % 2 != 0:
-     print(n * i )
-for i in range(-1):
-    if i % 2 != 0:
-     print(n * i )
+# n = "*"
+# for i in range(1,8):
+#     if i % 2 != 0:
+#      print(n * i )
+# for i in range(-1):
+#     if i % 2 != 0:
+#      print(n * i )
    
-    
-    
+# Q2 Largest Gap Between Consecutive Prices 📊
+# Given a list of daily prices, find the largest single-day change (up or down — take the absolute difference) between any two consecutive days, and the index where it starts.
+# INPUT: [100, 105, 98, 150, 140, 142]
+# OUTPUT: (52, 2)
 
+# arr = [100, 105, 98, 150, 140, 142]
+# max = 0
+# new_arr = []
+
+# for i in range(len(arr) - 1):
+#     diff = (abs(arr[i] - arr[i + 1]))
+#     new_arr.append(diff)
+#     if new_arr[i] > max:
+#        max = new_arr[i]
+# print(f"{max},{new_arr[i]}")
+
+
+
+# Q1 (Medium) — Snack Combo Pricing 🍿
+# A cinema snack counter has these rules:
+# Popcorn + Drink combo → ₹350
+# Only Popcorn → ₹200
+# Only Drink → ₹150
+# Neither → ₹0
+# Members get an extra 15% off on top of that (only if they ordered something).
+# INPUT: popcorn=True, drink=True, is_member=True
+# OUTPUT: 297.5
+
+
+# popcorn = input("has popcorn ? (True/Flase):") == "True"
+# drink = input("has drink ? (True/Flase):") == "True"
+# is_member =   input("is member ? (True/Flase):") == "True"
+
+# if popcorn and drink:
+#     price = 350
+# elif popcorn:
+#     price = 200
+# elif drink:
+#     price = 150
+# else:
+#     price = 0
+# if is_member and price > 0:
+#    price = price * 0.85
+# print(price)
+
+
+# Q3 Solar Panel Grid Analyzer ☀️ (Nested Loop)
+# A solar farm has panels arranged in a grid, each recording its efficiency %. Find the panel with the lowest efficiency and its position.
+# INPUT: [[80, 75, 90],  [60, 55, 70],  [88, 92, 85]]
+# OUTPUT: Lowest output panel at (1, 1) with 55% efficiency
+    
+    
+# Q4 Set Matrix Zeroes 🔲
+# Given a matrix, if any cell contains 0, set its entire row and entire column to 0.
+
+# INPUT: 
+# [[1, 1, 1],
+#  [1, 0, 1],
+#  [1, 1, 1]]
+
+# OUTPUT:
+# [[1, 0, 1],
+#  [0, 0, 0],
+#  [1, 0, 1]]
+
+
+# matrix = [[1, 1, 1],
+# [1, 0, 1],
+# [1, 1, 1]]
+
+# zero_row = []
+# zero_col = []
+# n = len(matrix)
+# for i in range(n):
+#     for j in range(n):
+#         if matrix[i][j] == 0:
+#             zero_row.append(i)
+#             zero_col.append(j)
+
+# for i in zero_row:
+#     for j in range(n):
+#         matrix[i][j] = 0
+
+
+# for j in zero_col:
+#     for i in range(n):
+#         matrix[i][j] = 0
+
+
+# for row in matrix:
+#     print(row)
+
+# def multiply(a, b):
+#     return a * b
+
+# print(multiply(5, 3))
+
+
+# Q3 Find Common Elements Between Two Lists (Using Sets)
+# Given two lists, find the elements that appear in both of them. 
+
+# Input: [1,2,3,4,5], [3,4,5,6,7]
+# Output: {3, 4, 5}
+
+
+# Q2 Character Frequency Counter
+# Count how many times each character appears in a string, and store the result in a dictionary.
+
+# Input: "banana"
+# Output: {'b': 1, 'a': 3, 'n': 2}
+
+
+# string = "banana"
+
+# frequency = {}
+
+# for char in string:
+#     if char in frequency:
+#         frequency[char] += 1
+#     else:
+#         frequency[char] = 1
+
+# print(frequency)
+
+
+
+
+# Q3 Find Common Elements Between Two Lists (Using Sets)
+# Given two lists, find the elements that appear in both of them. 
+
+# Input: [1,2,3,4,5], [3,4,5,6,7]
+# Output: {3, 4, 5}
+
+# arr1 = [1,2,3,4,5]
+# arr2 = [3,4,5,6,7]
+
+# common = set(arr1) & set(arr2)
+# print(common)
+
+
+# Q4 Three Sum: Zero-Sum Triplets 🎲
+# Find all unique triplets in a list that add up to zero. No triplet should repeat, even if the same numbers appear via different indices.
+
+# Input: [-1, 0, 1, 2, -1, -4]
+# Output: [(-1, -1, 2), (-1, 0, 1)]
+
+# HINT: Sort the array first (makes duplicates sit next to each other).
+
+# arr =  [-1, 0, 1, 2, -1, -4]
+# for i in range(len(arr)):
+#     for j in range(i+1,len(arr)):
+#         if arr[i] > arr[j]:
+#             arr[i],arr[j] = arr[j],arr[i]
+# print(arr)
