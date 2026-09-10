@@ -1599,3 +1599,166 @@
 #         if arr[i] > arr[j]:
 #             arr[i],arr[j] = arr[j],arr[i]
 # print(arr)
+
+
+# Q1: Find the Key with the Maximum Value
+# Given a dictionary of item names and their prices, find which key has the highest value. 
+
+# INPUT: {"apple": 30, "banana": 50, "mango": 45}
+# OUTPUT: "banana"
+
+# dic = {"apple": 30, "banana": 50, "mango": 45}
+# largest = 0
+# largest_key =  ""
+# for key,value in dic.items():
+#     if value > largest:
+#         largest = value
+#         largest_key = key
+# print(largest_key)
+
+
+# Q3: Find Both Min and Max (Multiple Return Values)
+# Write a function that returns both the smallest and the largest number in a list at once.
+
+# INPUT: [4, 2, 9, 1, 7]
+# OUTPUT: (1, 9) 
+
+# def min_maxNumbers(numbers):
+#     min = numbers[0]
+#     max = numbers[0]
+
+#     for num in numbers:
+#         if num > max:
+#             max = num
+#         if num < min:
+#             min = num
+#     return min ,max
+
+# numbers = [4, 2, 9, 1, 7]
+
+# result = min_maxNumbers(numbers)
+# print(result)
+
+
+# Q2: Union and Intersection of Two Sets
+# Given two lists, find both their union (all unique elements from both) and their intersection (only the common ones).
+
+# INPUT: [1,2,3], [2,3,4] 
+# OUTPUT: Union = [1,2,3,4], Intersection = [2,3]
+
+# arr1 = [1, 2, 3]
+# arr2 = [2, 3, 4]
+
+# # Convert lists into sets
+# set1 = set(arr1)
+# set2 = set(arr2)
+
+# Union: all unique elements from both sets
+# union = set1 | set2
+
+# Intersection: common elements in both sets
+# intersection = set1 & set2
+
+
+# Convert sets back to lists
+# union = sorted(list(union))
+# intersection = sorted(list(intersection))
+
+# print("Union =", union)
+# print("Intersection =", intersection)
+
+
+
+# Q4: Contains Duplicate Within K Distance 📏
+# Given an array and a number k, check if there are two equal elements whose indices are at most k apart.
+
+# Input: [1,2,3,1], k=3
+# Output: True   (both 1s are within 3 positions of each other)
+# Input: [1,2,3,1,2,3], k=2
+# Output: False   (the repeated values are all more than 2 apart)
+
+
+# difference = current_index - previous_index
+
+# if difference <= k:
+#     return True
+
+
+# arr = [1,2,3,1,2,3]
+# k = 2
+# found = False
+# for i in range(len(arr)):
+#     for j in range(i+1,len(arr)):
+#         if arr[i] == arr[j] and j - i <= k:
+#             found = True
+#             break
+
+# if found == True:
+#     print("True")
+# else:
+#     print("False")
+
+
+
+# Q1: Get Value with a Default (Safe Lookup)
+# Write a function that safely looks up a key in a dictionary. If the key doesn't exist, return a default value instead of causing an error.
+
+# Input: {"a":1,"b":2}, key="c", default="Not Found"
+# Output: "Not Found"
+
+# alpha = {"a":1,"b":2}
+# if "c" not in alpha:  
+#    print("not found")
+# else:
+#    print("found")
+
+# HINT: Use the in keyword to check if the key exists in the dictionary before trying to access it.
+
+# Q2: Ticket Price by Age Bracket
+# A theme park charges different prices based on age: under 5 → free, 5–11 → ₹100, 12–59 → ₹200, 60+ → ₹120 (senior discount).
+
+# Input: 8
+# Output: 100
+
+
+# age = int(input("Enter Your Age : "))
+# if age < 5:
+#     price = "free"
+# elif age < 11:
+#     price = 100
+# elif age > 12 and age < 59:
+#     price = 200
+# else:
+#     price = 120
+# print(price)
+
+# Q3: First Non-Repeating Character 🔤
+# Given a string, find the first character that doesn't repeat anywhere else in it. If every character repeats, return None.
+
+# Input: "swiss"
+# Output: "w"
+
+# string = "swiss"
+# for i in range(len(string)):
+#     count = 0
+#     for j in range(len(string)):
+#         if string[i] == string[j]:
+#             count += 1
+#     if count == 1:
+#         print(string[i])
+#         break
+
+# Q4: Subarray Sum Equals K 🧮
+# Given an array and a target sum k, count how many contiguous subarrays sum up to exactly k.
+
+# Input: [1, 1, 1], k=2
+# Output: 2
+# (subarrays [1,1] at index 0-1, and [1,1] at index 1-2 both sum to 2)
+
+# arr = [1, 1, 1]
+# k = 2
+# count= 0
+# for i in range(len(arr)-1):
+#     if arr[i] + arr[i+1] == k:
+#         count += 1
+# print(count)
